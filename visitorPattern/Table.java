@@ -26,7 +26,6 @@ public class Table implements ShoppingItem {
         this.price = price;
     }
 
-    
     @Override
     public double accept(ShoppingCartVisitor visitor) {
         return visitor.visit(this);
